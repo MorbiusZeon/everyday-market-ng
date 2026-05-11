@@ -1,0 +1,17 @@
+<div class ="menu-container">
+
+   @for (category of categories; track category.id) 
+   {
+
+        <app-category-menu-item-component
+
+            [categoryName]="category.name"
+            [categoryImage]="category.image"
+            (itemclicked) = "onItemClicked(category)"
+
+        >
+
+        </app-category-menu-item-component>
+    }
+
+</div>   
