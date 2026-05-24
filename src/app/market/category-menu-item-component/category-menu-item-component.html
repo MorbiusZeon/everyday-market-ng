@@ -1,15 +1,18 @@
+
+
 <div 
-   class = "category-card "
-   (click) = "onItemclicked()"
+        class="category-card"
+
+        [style.backgroundImage]="'url(' + categoryImage + ')'"
+
+        tabindex="0"
+
+        (click)="onItemclicked()"
+
+        (keydown.enter)="onItemclicked()"
 >
 
 
-<img 
-    [src]="categoryImage"
-    [alt]="categoryName"
-    class="category-image"
->
-
-   <h3>{{categoryName}}</h3>
+        <h3>{{categoryName}}</h3>
 
 </div>

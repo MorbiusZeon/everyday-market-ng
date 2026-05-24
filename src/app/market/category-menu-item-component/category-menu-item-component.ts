@@ -13,13 +13,13 @@ export class CategoryMenuItemComponent
 {
 
   @Input()
-  categoryName: string = '';
+  categoryName = '';
 
   @Input()
-  categoryImage: string = '';
+  categoryImage = '';
 
   @Output()
-  itemclicked = new EventEmitter<string>();
+  itemclicked = new EventEmitter();
 
   onItemclicked() {
     this.itemclicked.emit(this.categoryName);

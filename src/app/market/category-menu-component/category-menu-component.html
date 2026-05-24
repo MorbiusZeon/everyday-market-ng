@@ -1,17 +1,13 @@
-<div class ="menu-container">
+<div class="menu-container">
 
-   @for (category of categories; track category.id) 
-   {
+  @for (category of categories; track category.id) {
 
-        <app-category-menu-item-component
+    <app-category-menu-item-component
+      [categoryName]="category.name"
+      [categoryImage]="category.imageUrl"
+      (itemclicked)="onItemClicked(category)">
+    </app-category-menu-item-component>
 
-            [categoryName]="category.name"
-            [categoryImage]="category.image"
-            (itemclicked) = "onItemClicked(category)"
+  }
 
-        >
-
-        </app-category-menu-item-component>
-    }
-
-</div>   
+</div>

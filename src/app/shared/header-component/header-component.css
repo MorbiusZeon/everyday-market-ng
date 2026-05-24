@@ -1,8 +1,9 @@
 .header{
 
-  height : 180px;
+  height: 50vh;
+  min-height: 50vh;
 
-  background-image: url('/assets/images/EverydayMarket.jpg');
+  background-image: url('../../../assets/images/EverydayMarket.jpg');
 
   background-size: cover;
 
