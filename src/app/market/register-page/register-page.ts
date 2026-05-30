@@ -24,6 +24,7 @@ import { Router } from '@angular/router';
 
 // This component provides a registration form for users to create an account.
 //  When the form is submitted and valid, it navigates the user to the products page if the country is Canada.
+//Use of injection to get instances of FormBuilder and Router.
 
 export class RegisterPageComponent {
 
@@ -45,6 +46,7 @@ export class RegisterPageComponent {
 
   ];
 
+  // use FormBuilder to create a reactive form with validation rules for each field
   registerForm= this.fb.group({
       name: [
         '',
